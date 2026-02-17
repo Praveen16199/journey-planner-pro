@@ -237,16 +237,25 @@ const Index = () => {
     </StopLayout>
   );
 
-  // Stop 5: Real-Time Project
+  // Stop 5: Industrial Real-Time Project
   const renderProject = () => (
-    <StopLayout icon={<ExternalLink className="w-8 h-8" />} title="Real-Time Project" stopNum={5}>
+    <StopLayout icon={<ExternalLink className="w-8 h-8" />} title="Industrial Real-Time Project" stopNum={5}>
       <Card className="border-2 border-bus-yellow shadow-xl">
         <CardContent className="p-8 text-center">
-          <div className="text-6xl mb-4">🚧</div>
-          <p className="text-lg text-foreground mb-4 font-semibold">Project link will be added soon!</p>
-          <p className="text-muted-foreground">
-            A real-time project built during training at Besant Technologies will be showcased here.
+          <div className="text-6xl mb-4">🛍️</div>
+          <p className="text-2xl font-display font-bold text-foreground mb-2">Fashion Store — E-Commerce Platform</p>
+          <p className="text-muted-foreground mb-6">
+            A fully functional e-commerce web application built with modern web technologies during industrial training.
           </p>
+          <a
+            href="https://fashion-store-e-commerce-platform.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-bus-yellow hover:bg-bus-orange text-bus-dark font-bold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all"
+          >
+            <ExternalLink className="w-4 h-4" />
+            View Live Project
+          </a>
         </CardContent>
       </Card>
     </StopLayout>
